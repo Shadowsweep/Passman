@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- First Visit Setup Screen -->
+        <div id="setupScreen" class="screen">
+            <p>TECH UNSATISFIED</p>
+            <h2>Welcome to Password Manager</h2>
+            <p class="setup-info">First time setup - Set your master password</p>
+            <div class="input-group">
+                <input type="text" id="defaultPassword" readonly>
+                <button id="regenerateBtn" class="icon-btn" title="Generate new password">↻</button>
+            </div>
+            <p class="hint">You can use this suggested password or create your own:</p>
+            <div class="input-group">
+                <input type="password" id="newMasterPassword" placeholder="Enter your master password">
+            </div>
+            <div class="input-group">
+                <input type="password" id="confirmMasterPassword" placeholder="Confirm master password">
+            </div>
+            <div class="input-group">
+                <input type="text" id="passwordHint" placeholder="Enter a hint to help remember your password">
+            </div>
+            <button id="setupBtn" class="primary-btn">Set Password</button>
+        </div>
+
+        <!-- Login Screen -->
+        <div id="loginScreen" class="screen">
+            <p>TECH UNSATISFIED</p>
+            <h2>Password Manager</h2>
+            <div class="input-group">
+                <input type="password" id="masterPassword" placeholder="Enter master password">
+                <button id="unlockBtn" class="primary-btn">Unlock</button>
+            </div>
+            <div class="hints-container">
+                <p id="passwordHintText" class="hint hidden"></p>
+            </div>
+        </div>
+
+        <!-- Main Screen -->
+        <div id="mainScreen" class="screen">
+            <p>TECH UNSATISFIED</p>
+            <div class="header">
+                <h2>Passwords</h2>
+                <button id="addNewBtn" class="icon-btn">+</button>
+            </div>
+
+               <!-- Password Generator Section -->
+               <div class="password-generator">
+                <h3>Generate Password</h3>
+                <div class="generator-controls">
+                    <input type="text" id="generatedPassword" readonly>
+                    <button id="generateNewBtn" class="icon-btn" title="Generate new password">↻</button>
+                    <button id="copyGeneratedBtn" class="icon-btn" title="Copy password">📋</button>
+                </div>
+                <div class="length-control">
+                    <label for="passwordLength">Length: <span id="lengthValue">12</span></label>
+                    <input type="range" id="passwordLength" min="8" max="32" value="12">
+                </div>
+            </div>
+
+
+            <!-- Add New Password Form -->
+            <div id="addPasswordForm" class="hidden">
+                <input type="text" id="websiteName" placeholder="Website name">
+                <input type="password" id="passwordInput" placeholder="Password">
+                <button id="savePasswordBtn" class="primary-btn">Save</button>
+            </div>
+
+            <!-- Password List -->
+            <div id="passwordList" class="password-list">
+                <!-- Passwords will be added here dynamically -->
+            </div>
+
+            <div class="settings-section">
+                <button id="changeMasterBtn" class="secondary-btn">Change Master Password</button>
+                <button id="lockBtn" class="secondary-btn">Lock</button>
+            </div>
+        </div>
+
+        <!-- Change Master Password Screen -->
+        <div id="changeMasterScreen" class="screen">
+            <h2>Change Master Password</h2>
+            <input type="password" id="currentMasterPassword" placeholder="Current master password">
+            <input type="password" id="newMasterPasswordChange" placeholder="New master password">
+            <input type="password" id="confirmMasterPasswordChange" placeholder="Confirm new master password">
+            <div class="button-group">
+                <button id="updateMasterBtn" class="primary-btn">Update Password</button>
+                <button id="cancelChangeBtn" class="secondary-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

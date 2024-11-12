@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Passman",
+    "version": "1.0",
+    "description": "A secure password manager with modern UI",
+    "permissions": ["storage"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "48": "icon48.png"
+    }
+  }

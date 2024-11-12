@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    width: 320px;
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+h2 {
+    color: #2d3436;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.setup-info {
+    text-align: center;
+    color: #636e72;
+    margin-bottom: 15px;
+}
+
+.hint {
+    font-size: 0.9em;
+    color: #636e72;
+    margin: 10px 0;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dfe6e9;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #6c5ce7;
+}
+
+input[readonly] {
+    background-color: #f1f2f6;
+}
+
+.primary-btn {
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.primary-btn:hover {
+    background: #5f4dd1;
+}
+
+.secondary-btn {
+    background: #ff7675;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon-btn {
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#addPasswordForm {
+    margin-bottom: 20px;
+}
+
+#addPasswordForm input {
+    margin-bottom: 10px;
+}
+
+.password-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.password-item h3 {
+    color: #2d3436;
+    margin-bottom: 5px;
+}
+
+.password-item .password {
+    color: #636e72;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-btn {
+    background: none;
+    border: none;
+    color: #6c5ce7;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.copy-btn:hover {
+    color: #5f4dd1;
+}
+
+.password-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.settings-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.password-generator {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.password-generator h3 {
+    margin: 0 0 10px 0;
+    color: #2d3436;
+}
+
+.generator-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.generator-controls input {
+    flex: 1;
+}
+
+.length-control {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.length-control label {
+    color: #636e72;
+    font-size: 0.9em;
+}
+
+.length-control input[type="range"] {
+    width: 100%;
+}
+
+.password-input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.password-input-group input {
+    flex: 1;
+}
+
+.password-item .password {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.password-item .password span {
+    flex: 1;
+}
+
+.icon-btn {
+    min-width: 30px;
+    padding: 0;
+}
