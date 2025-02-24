@@ -15,7 +15,7 @@ Passman is an open-source password manager designed to help you store and genera
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/passman.git
+   git clone https://github.com/Shadowsweep/Passman.git
    ```
 
 ## 🛠️ Usage as a Chrome Extension
