@@ -36,9 +36,7 @@ We welcome contributions! If you’d like to improve Passman, follow these steps
 4. Push to your branch (`git push origin feature-branch`).
 5. Open a Pull Request.
 
-## 📜 License
 
-Passman is open-source and available under the [MIT License](LICENSE).
 
 
 
